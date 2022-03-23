@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    /* ### Primary */
+--clr-primary-orange: hsl(25, 97%, 53%);
+    /* ### Neutral */
+--clr-neutral-white: hsl(0, 0%, 100%);
+--clr-neutral-Light-Grey: hsl(217, 12%, 63%);
+--clr-neutral-medium-grey: hsl(216, 12%, 54%);
+--clr-neutral-Dark-Blue: hsl(213, 19%, 18%);
+--clr-neutral-very-Dark-Blue: hsl(216, 12%, 8%);
+
+    /* font weights */
+--fw-regular: 400 !important;
+--fw-bold: 700 !important;
+}
+html{
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+/* utilities */
+.dsply-blck{ display: block;}
+.dsply-none{ display: none;}
+.flex-class{ display: flex;}
+.grid-class{ display: grid;} 
+.text-center{ text-align: center;}
+/* body */
+body{
+    background: var(--clr-neutral-very-Dark-Blue);
+}
+main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+p{ color: var(--clr-neutral-Light-Grey);}
+.rating-component{ border-radius: 1.5rem; padding: 2rem; background: hsl(215, 27%, 12%); color: var(--clr-neutral-white); margin: 1rem;}
+.rating-star{ display:inline-grid;width: 35px; height: 35px; place-content: center;  background: var(--clr-neutral-Dark-Blue); padding: .5rem; border-radius: 50%;}
+/* section1 */
+.section1 *,.section2 *{
+    margin-bottom: 1rem;
+}
+/* text */
+.para-section1,.para-section2{ max-width: 35ch;}
+.your-rating-text{ color: var(--clr-primary-orange); padding: .5rem; background: var(--clr-neutral-Dark-Blue); border-radius: 30px;}
+/* button */
+.rating-div{ justify-content: space-between;}
+button{ border: none; font-family: inherit; color: inherit; cursor: pointer;}
+    .btn-rating{ width: 38px; height: 38px; border-radius: 50%;color: var(--clr-neutral-Light-Grey); background: rgb(39, 46, 56);}
+    .btn-submit{ padding: .75rem; border-radius: 32px; width: 100%; background: var(--clr-primary-orange);}
+        .btn-submit:hover{ color: var(--clr-primary-orange); background: var(--clr-neutral-white);}
+        .btn-rating:hover{ color: var(--clr-neutral-white);background: var(--clr-neutral-medium-grey);}
+/* section2 */
+.thankyou-illus{
+  display: grid; place-content: center;
+}
+.your-rating-container{ display: grid; place-content: center; } 
+/* footer */
+.attribution { color: var(--clr-neutral-white); text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+/* Js class lists */
+.bg-orange{ background-color: var(--clr-primary-orange);}
+/* over riding classes */
+.margin-zero{ margin: 0;}
